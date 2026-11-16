@@ -23,7 +23,7 @@ const FINANCE_SERVER_URL = String(
 // Quando um contato AUTORIZADO manda mensagem, avisa um webhook do Home Assistant; é o HA que decide
 // como falar (qual Echo, horário silencioso, Não Perturbe, limpeza de links/emoji, corte de tamanho).
 // Desligado por padrão: só funciona com as duas variáveis abaixo no .env.
-//   HA_WEBHOOK_URL=http://192.168.4.30/api/webhook/<id-secreto>   (sem porta: a 8123 não responde a partir do notebook)
+//   HA_WEBHOOK_URL=http://homeassistant.local:8123/api/webhook/<id-secreto>   
 //   ECHO_CONTATOS=5551999990000:Nome falado,5551988887777:Outro    (DDI+DDD+número : como a Alexa fala o nome)
 // O contato é identificado SÓ pelo número (o nome de perfil do WhatsApp é editável por quem envia, então
 // não serve para autorizar). Grupos, status e canais são sempre ignorados. O texto das mensagens nunca é logado.
